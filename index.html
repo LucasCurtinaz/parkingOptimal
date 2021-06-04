@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Questão 1</title>
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <p>teste</p>
+    </div>
+    <script>
+      var test = Number(prompt("Digite o número de testes"));
+      for (i = 1; i <= test; i++) {
+        var stores = Number(prompt("Digite o número de lojas"));
+        var max = 0;
+        var min = 100;
+        for (j = 1; j <= stores; j++) {
+          var positions = Number(
+            prompt("Digite o número de posições na Long Street")
+          );
+          if (max < positions) {
+            max = positions;
+          }
+          if (min > positions) {
+            min = positions;
+          }
+        }
+        console.log((max - min) * 2);
+      }
+    </script>
+  </body>
+</html>
